@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+//Esto es lo que le da estilo a la pagina -- Llamamos al App.css
 import './App.css';
+// uso de { } para indicar que mas de un componente se esta exportando. Se eliminan si solo se requiere exportar un componente por defecto
+import { Testimonio } from './componentes/Testimonio.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="contenedor-principal">
+        <h1>Here is what our alumni say about freeCodeCamp:</h1>
+        <Testimonio />
+      </div>
     </div>
   );
 }
 
 export default App;
+// export default Nombre solo si se quiere exportar un elemento en especifico
