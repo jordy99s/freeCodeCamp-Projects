@@ -10,11 +10,11 @@ function Boton(props) {
 	return ( 
 		// LAS `` nos sirve para crear una cadena de caracteres que pueda contener codigo de javascript
 		// trimEnd remueve espacios de una cadena de caracteres
-		<div 
+		<button 
 			className={ `boton-contenedor ${esOperador(props.children) ? 'operador' : '' }`.trimEnd() }
 			onClick={ () => props.manejarClic(props.children) } > 
 			{ props.children }
-		</div>
+		</button>
 	);
 }
 

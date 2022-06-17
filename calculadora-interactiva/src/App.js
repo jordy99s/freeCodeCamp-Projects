@@ -2,11 +2,11 @@ import './App.css';
 import Boton from './componentes/Boton';
 import BotonClear from './componentes/BotonClear';
 import Pantalla from './componentes/Pantalla';
-import freeCodeCampLogo from './imagenes/freecodecamp-logo.png';
 
 import { useState } from 'react';
 // mathjs se instala usando npm install mathjs desde la terminal
 import { evaluate } from 'mathjs';
+import Logo from './componentes/FreeCodeCampLogo';
 
 function App() {
 
@@ -27,13 +27,7 @@ function App() {
   return (
     <div className='App'>
       {/* LOGO APLICACION */}
-      <div className='freecodecamp-logo-contenedor'>
-        <img 
-          className='freecodecamp-logo'
-          src={freeCodeCampLogo}
-          alt='Logo de freeCodeCamp' 
-        />
-      </div>
+      <Logo />
       {/* Contenedor de la calculadora */}
       <div className='contenedor-calculadora' >
         {/* Pantalla de la calculadora */}
@@ -54,7 +48,7 @@ function App() {
         <div className='fila'>
           <Boton manejarClic={agregarInput} >7</Boton>
           <Boton manejarClic={agregarInput} >8</Boton>
-          <Boton manejarClic={agregarInput}>9</Boton>
+          <Boton manejarClic={agregarInput} >9</Boton>
           <Boton manejarClic={agregarInput} >*</Boton>
         </div>
         <div className='fila'>
