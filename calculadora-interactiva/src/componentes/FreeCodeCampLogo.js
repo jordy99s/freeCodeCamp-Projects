@@ -1,4 +1,5 @@
 import React from 'react';
+import '../stylesheets/FreeCodeCampLogo.css';
 
 import freeCodeCampLogo from '../imagenes/freecodecamp-logo.png';
 
